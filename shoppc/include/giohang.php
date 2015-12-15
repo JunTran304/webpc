@@ -55,7 +55,7 @@ function themGH($id, $sl)
 
 function hienthiGH($gh)
 {
-  include "connect.php"; 
+  include "../../connect.php"; 
     echo "<table width=560 border=0 cellspacing=0 cellpadding=0 style=\"border:1px solid #333\">
 <tr>
     <td colspan=6 class=tieude align=center>GIỎ HÀNG CỦA QUÝ KHÁCH</td>

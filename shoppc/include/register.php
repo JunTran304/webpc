@@ -2,7 +2,7 @@
 $act=""; $hoten=""; $diachi=""; $email="";$dienthoai="";$user="";;
 if(isset($_POST["act"]))
 {
-	include "connect.php";
+	include "../../connect.php";
 	$hoten=$_POST["hoten"];
 	$hoten=EncodeSpecialChar($hoten);
 	$diachi=$_POST["diachi"];
@@ -29,6 +29,24 @@ if(isset($_POST["act"]))
 }
 ?>
 <script language="javascript">
+
+function test(){
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.timeout = 10000; // timeout sau 10s ko nhan duoc ket qua se huy request
+    var rurl = "dia chi nhan request";
+    var param='username='+username+'&img='+imgData+'&fname='+fname+'&lname='+lname+'&ext='+ext;// cac tham so truyen vao
+    xmlhttp.open("POST", rurl, true); // mo ket noi toi rurl
+    // xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded; charset=UTF-8"); // dat request header, 1 so truong hop la bat buoc nhung thuong thi khong
+    xmlhttp.send(param); // gui request
+    xmlhttp.onreadystatechange=function() { // xu li khi ket thuc request
+      if (xmlhttp.readyState == 4 && xmlhttp.status == 200) { // gui thanh cong va nhan duoc response
+        document.getElementById("resultText").innerHTML = xmlhttp.responseText;
+      }else{// cac trang thai loi
+
+      }
+    }
+  }
+
 function createXMLHttp()
     {
         var xmlHttp =false;
@@ -53,7 +71,8 @@ function createXMLHttp()
     
         
 var xmlHttp = new createXMLHttp();
-function process()
+function 
+ s()
 {
   if (xmlHttp.readyState == 4 || xmlHttp.readyState == 0)
   { 

@@ -24,7 +24,7 @@ objImg.src="images/arrow-square.gif";
     <div align="left" style="color:#FFF; font-family:Tahoma; font-size: 14px; padding-left:30px;">DANH MỤC SẢN PHẨM</div></td>
   </tr>
 	<?php
-		include "connect.php";
+		include "../../connect.php";
 		$sql="select * from nhomsanpham";
 		$kq=mysql_query($sql);		
 		while($r=mysql_fetch_array($kq))

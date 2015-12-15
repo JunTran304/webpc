@@ -1,5 +1,5 @@
 <?php
-include "connect.php";
+include "../../connect.php";
 $act=""; $hoten=""; $cty=""; $email="";$dienthoai="";$fax="";$diachi=""; $noidung="";
 if (isset($_POST["act"]))
 {

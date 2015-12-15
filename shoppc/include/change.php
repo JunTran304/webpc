@@ -2,7 +2,7 @@
 $act=""; $hoten=""; $diachi=""; $email="";$dienthoai="";
 if(isset($_POST["act"]))
 {
-	include "connect.php";
+	include "../../connect.php";
 	$hoten=$_POST["hoten"];
 	$hoten=EncodeSpecialChar($hoten);
 	$diachi=$_POST["diachi"];

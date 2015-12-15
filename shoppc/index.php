@@ -15,12 +15,16 @@ echo $title;
 ?></title>
 <link type="text/css" rel="stylesheet" href="css/style.css" />
 <link type="text/css" rel="stylesheet" href="css/menu.css" />
+<link href="css/bootstrap.min.css" rel="stylesheet"/>
+<script language="javascript" src="js/jquery.min.js"></script>
+<script language="javascript" src="js/bootstrap.min.js"></script>
 <script language="JavaScript" type="text/JavaScript" src="quanly.js"></script>
 <!--<script language="JavaScript" type="text/JavaScript" src="Scripts/kt-trinhduyet.js"></script>-->
 <script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
 <link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="ajax.js"></script>
 <script language="JavaScript" type="text/JavaScript" src="Scripts/avim.js"></script>
+
 </head>
 
 <body onload="kt()">
@@ -61,7 +65,7 @@ echo $title;
   
                    	         	  
         </div>
-        	
+        
         <div id="content">
 		<?php
 		$file="include/content.php";
@@ -86,7 +90,7 @@ echo $title;
 			if($b=="tk")
 				$file="include/result.php";
 			if($b=="dk")
-				$file="include/register.php";
+				$file="modal.php";
 			if($b=="cpw")
 				$file="include/change-pw.php";
 			// if($b=="rpw")

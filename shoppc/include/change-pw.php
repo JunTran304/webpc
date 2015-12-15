@@ -1,5 +1,5 @@
 <?php
- ////////////////////////////
+ 
 $ss_tendangnhap=$_SESSION['user'];
 $idkey=EncodeSpecialChar($ss_tendangnhap);
 $result_thanhvien=mysql_query("SELECT * FROM thanhvien where user='$idkey'");

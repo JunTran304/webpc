@@ -36,7 +36,7 @@
           <tr>
             <td align="center" style="padding-left:5px;">    
 <?php
-	include "connect.php";
+	include "../../connect.php";
 	$sql2="select * from sanpham where hinh like '%".$timkiem."%' OR tensp like '%".$timkiem."%' OR mota like '%".$timkiem."%' limit ".($curpage-1)*$pagesize.",$pagesize";
 	$kq2=mysql_query($sql2);
 	//$numrow2=mysql_num_rows($kq2);

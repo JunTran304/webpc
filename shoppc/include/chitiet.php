@@ -30,7 +30,7 @@
 		}
 ?>
 <?php
-	include "connect.php";
+	include "../../connect.php";
 	$id=$_GET["id"];
 	$sql="SELECT sanpham.*,loaisanpham.*,nhomsanpham.* from sanpham,loaisanpham,nhomsanpham where sanpham.id_loai=loaisanpham.id_loai AND loaisanpham.id_nhom=nhomsanpham.id_nhom AND sanpham.id='$id'";
 	$kq=mysql_query($sql);
@@ -161,7 +161,7 @@ thanh toán:</td>
           <tr>
             <td align="center" style="padding-left:5px;">    
         	<?php
-            include "connect.php";
+            include "../../connect.php";
             $sql2="select * from sanpham where id_loai=$id_loai and ( ghichu='hienthi' or ghichu='new' ) and id<>'$id' order by rand() limit 0,27";
             $kq2=mysql_query($sql2);			
             while($r2=mysql_fetch_array($kq2))

@@ -19,7 +19,7 @@ if(isset($_POST["xoagiohang"]))
 	}
   ?>
 <?php
-	include("connect.php");
+	include("../connect.php");
   	$user=$_SESSION["user"];	
 	function print_option($sql)
 	{
